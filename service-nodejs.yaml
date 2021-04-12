@@ -1,0 +1,12 @@
+piVersion: v1
+kind: Service
+metadata:
+  name: firstdeploy
+  labels:
+    app: firstdeploy
+spec:
+  ports:
+  - port: 3000
+    protocol: TCP
+  selector:
+    app: firstdeploy
